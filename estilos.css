@@ -57,12 +57,17 @@ nav ul.menu {
 }
 
 .card {
-    background-color: #fff;
+    background-color: #333;
     border: 1px solid #ddd;
     text-align: center;
     padding: 20px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     transition: transform 0.3s ease;
+}
+
+.card h2,
+.card p {
+    color: #fff;
 }
 
 .card:hover {
