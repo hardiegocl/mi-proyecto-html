@@ -1,3 +1,8 @@
+:root {
+    --primary-color: #6a1b9a;
+    --accent-color: #ff6f00;
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -115,4 +120,42 @@ nav ul.menu {
     .action-btn {
         width: 100%;
     }
+}
+
+/* Estilos específicos para la página de login */
+.login-page header {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+.login-page .menu a {
+    color: #fff;
+}
+
+.login-page main {
+    background-color: #fdf6ff;
+    padding: 20px;
+}
+
+.login-page .fila {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.login-page input[type="text"],
+.login-page input[type="password"] {
+    padding: 8px 10px;
+    border: 1px solid var(--primary-color);
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.login-page .login-btn {
+    background-color: var(--accent-color);
+}
+
+.login-page .login-btn:hover {
+    background-color: #e66000;
 }
