@@ -6,7 +6,7 @@
     <title>Login</title>
     <link rel="stylesheet" href="estilos.css">
 </head>
-<body>
+<body class="login-page">
     <div class="contenedor">
         <header>
             <h1>Login</h1>
@@ -20,9 +20,22 @@
         </header>
 
         <main>
-            <div class="fila">Por favor ingrese sus datos</div>
-            <div class="fila">Nombre de usuario: <input type="text"></div>
-            <div class="fila">Contraseña: <input type="password"></div>
+            <form class="login-form">
+                <div class="fila">Por favor ingrese sus datos</div>
+                <div class="fila">
+                    <label>Nombre de usuario:
+                        <input type="text" name="username">
+                    </label>
+                </div>
+                <div class="fila">
+                    <label>Contraseña:
+                        <input type="password" name="password">
+                    </label>
+                </div>
+                <div class="fila">
+                    <button class="action-btn login-btn" type="submit">Ingresar</button>
+                </div>
+            </form>
         </main>
     </div>
 
